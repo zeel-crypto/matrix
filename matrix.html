@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        var tableElement = document.createElement('table');
-            document.body.appendChild(tableElement);
-            tableElement.setAttribute('border', '50px;' );
-        var randomNum =  Math.floor(Math.random()*20);
-    for(i=0; i <  Math.floor(Math.random()*20); i++){
-        var trElement = document.createElement('tr');
-            tableElement.appendChild(trElement);
-            
-            for(j=0; j < randomNum; j++){   
-                var tdElement = document.createElement('td');
-                trElement.appendChild(tdElement); 
-                tdElement.innerHTML = '1';
-    }
-    }   
+      var tableElement = document.createElement("table");
+      document.body.appendChild(tableElement);
+      tableElement.setAttribute("border", "50px;");
+      var randomNum = Math.floor(Math.random() * 20);
+      for (i = 0; i < Math.floor(Math.random() * 20); i++) {
+        var trElement = document.createElement("tr");
+        tableElement.appendChild(trElement);
+
+        for (j = 0; j < randomNum; j++) {
+          var tdElement = document.createElement("td");
+          trElement.appendChild(tdElement);
+          tdElement.innerHTML = "1";
+        }
+      }
     </script>
-</body>
+  </body>
 </html>
